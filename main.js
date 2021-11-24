@@ -19,7 +19,7 @@ body.append(chart);
 body.append(polar);
 
 div.click(function () {
-    alert("Hello, world!");
+  alert("Hello, world!");
 });
 const labels = [
     'January',
@@ -49,14 +49,14 @@ const labels = [
   );
 
   const data1 = {
-    labels1: [
+    labels: [
       'Red',
       'Green',
       'Yellow',
       'Grey',
       'Blue'
     ],
-    datasets1: [{
+    datasets: [{
       label: 'My First Dataset',
       data: [11, 16, 7, 3, 14],
       backgroundColor: [
@@ -70,21 +70,13 @@ const labels = [
   };
   const config1 = {
     type: 'polarArea',
-    data: data,
+    data: data1,
     options: {}
   };
   const myChart1 = new Chart(
     document.querySelector(`#polar`),
     config1
   );
-
-
-
-
-
-
-
-
 
 
 
